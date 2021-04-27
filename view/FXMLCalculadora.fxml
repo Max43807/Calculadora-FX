@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#detectarTeclas_OnKeyTyped" prefHeight="360.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadorafx.controller.FXMLCalculadoraController">
+   <children>
+      <TextField fx:id="txfPantalla" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="14.0" layoutY="22.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="324.0" text="0,">
+         <font>
+            <Font name="Consolas" size="29.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnIgual" defaultButton="true" layoutX="285.0" layoutY="292.0" mnemonicParsing="false" onAction="#operadores_Action" prefHeight="49.0" prefWidth="52.0" text="=" />
+      <Button layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="7" />
+      <Button layoutX="76.0" layoutY="98.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="8" />
+      <Button layoutX="14.0" layoutY="162.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="4" />
+      <Button layoutX="142.0" layoutY="98.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="9" />
+      <Button layoutX="76.0" layoutY="162.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="5" />
+      <Button layoutX="142.0" layoutY="162.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="6" />
+      <Button fx:id="btn1" layoutX="13.0" layoutY="225.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="1" />
+      <Button layoutX="76.0" layoutY="225.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="2" />
+      <Button layoutX="142.0" layoutY="225.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="49.0" prefWidth="52.0" text="3" />
+      <Button fx:id="btn0" layoutX="13.0" layoutY="285.0" mnemonicParsing="false" onAction="#digitos_Action" prefHeight="50.0" prefWidth="114.0" text="0" />
+      <Button fx:id="btnComa" layoutX="142.0" layoutY="286.0" mnemonicParsing="false" onAction="#decimal_Action" prefHeight="49.0" prefWidth="52.0" text="," />
+      <Button fx:id="btnC" cancelButton="true" layoutX="220.0" layoutY="105.0" mnemonicParsing="false" onAction="#clear_Action" prefHeight="49.0" prefWidth="52.0" text="C" />
+      <Button fx:id="btnCE" layoutX="285.0" layoutY="105.0" mnemonicParsing="false" onAction="#clearEntry_Action" prefHeight="49.0" prefWidth="52.0" text="CE" />
+      <Button fx:id="btnMenos" layoutX="220.0" layoutY="169.0" mnemonicParsing="false" onAction="#operadores_Action" prefHeight="49.0" prefWidth="52.0" text="-" />
+      <Button fx:id="btnMas" layoutX="285.0" layoutY="169.0" mnemonicParsing="false" onAction="#operadores_Action" prefHeight="49.0" prefWidth="52.0" text="+" />
+      <Button fx:id="btnPor" layoutX="220.0" layoutY="235.0" mnemonicParsing="false" onAction="#operadores_Action" prefHeight="49.0" prefWidth="52.0" text="X" />
+      <Button fx:id="btnDiv" layoutX="285.0" layoutY="235.0" mnemonicParsing="false" onAction="#operadores_Action" prefHeight="49.0" prefWidth="52.0" text="/" />
+      <Button fx:id="btnPorC" layoutX="220.0" layoutY="291.0" mnemonicParsing="false" onAction="#porcentaje_Action" prefHeight="49.0" prefWidth="52.0" text="\%" />
+   </children>
+</AnchorPane>

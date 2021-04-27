@@ -1,0 +1,45 @@
+
+/* 
+    Created on : Sep 9, 2014, 7:19:48 PM
+    Author     : AndersonRafael
+*/
+
+    .root {
+    -fx-background-image: url("fondo.png");
+    
+    }
+     
+    .label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #666666;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5),0,0,0,1);
+    }
+     
+    #tituloStyle {
+    -fx-font-size: 25px;
+    -fx-font-family: "Arial";
+    -fx-fill: #E1771E;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7),0,0,0,1);
+   
+    }
+     
+    #resultadoStyle {
+    -fx-font-size: 23px;
+    -fx-font-family: "Verdana";
+    -fx-fill: orangered;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5),0,0,0,1);
+    }
+     
+    .button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#666666,#333333);
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+    }
+     
+    .button:hover{
+    -fx-background-color: linear-gradient(#333333,#666666);
+    }
+
